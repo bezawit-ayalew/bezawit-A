@@ -109,4 +109,20 @@ Ayalew 10
 Summer, and Fall. Using these countries that have weather changes throughout the year we can
 perhaps assume that the results show COVID-19 spreads more during colder temperatures.
 
+<img width="215" alt="Screen Shot 2023-02-02 at 2 50 21 PM" src="https://user-images.githubusercontent.com/123434797/216435060-4621f4ba-1845-4da5-81bc-16a342d51f25.png">
 
+The countries with the lowest reported numbers seem to be countries located in Oceania,
+such countries as Micronesia, and Kiribati is island countries in Oceania. Perhaps the countries with lower numbers are because they are located in tropical warm climates or there was not a lot of tourism that allowed transmission of the virus, or not enough data was collected from those countries. In addition, the population size of that country is significantly lower than the other countries with higher confirmed cases and deaths.
+
+### Conclusion
+
+According to the results obtained it is clear that those countries with higher income had the highest number of deaths and confirmed cases. However when we look at the case fatality ratio also known as the case fatality risk which is the proportion of people who die from a specified disease among all individuals diagnosed with the disease over time. We had countries like Yemen, Haiti, Somalia, Niger, and Sudan. This means that even though the higher-income countries had a higher level of cases and deaths the case fatality was higher for those with lower-income countries. From this, we can deduce that lower-income countries had a lower rate of survival if they caught the disease. This could be because countries with higher incomes have
+more resources like hospitals, medicine, and doctors to help individuals combat the disease.
+
+Typically the population size of lower-income countries is higher however they did not have as many reported cases or deaths, this could be for many reasons. The demography of poorer countries shows that life expectancy is much lower than that of richer countries(Gesewew 2020). Perhaps since COVID-19 has a more severe impact on the older generation there were more confirmed cases in the US vs those countries with a lower life expectancy which already have a smaller population of older people. When comparing countries like the US and Zimbabwe we see that the number of cases in the US is significantly higher however the growth rate of cases is similar as they both have a gradual positive increase and cases start to slow down towards the end of April 2022. According to our results for the average monthly temperature vs the number of cases for countries like the US, Italy, and the UK, there seems to be a correlation between the number of cases and the temperature level. The results show for all three countries when the average temperature increases we see the total number of cases slowly decrease, and as soon as the temperature falls the number of cases spikes. This shows that the spread of the virus
+in the US, UK, and Italy slowed down during warmer temperatures this may be due to the fact COVID-19 is spread through human contact, and during warmer temperatures, people spend less time indoors. Higher-income countries usually have all seasons throughout the year whereas countries like Zimbabwe is a subtropical countries. Possibly lower-income countries may have benefited from having a warmer climate perhaps which contributed to the lower level of cases compare to higher-income countries. 
+
+Overall from the study we are able to see that impact is measured in many different ways,
+from the results obtained we are able to see that countries with a higher income were hit with the most cases, however, when looking at the case fatality ratio we see that people in poorer income countries had a higher risk of surviving if they caught the virus. According to our models,
+climate and population size seemed to have played a role in effectively measuring the impact of COVID-19 in different countries around the world. Over time as more data becomes available, more evaluations can be conducted to come to a better understanding of the COVID-19
+phenomena.
