@@ -60,5 +60,7 @@ course web into a single time series for each country.
 
 <img width="357" alt="Screen Shot 2023-02-01 at 9 25 08 PM" src="https://user-images.githubusercontent.com/123434797/216218281-93971f3b-552b-47e8-95d1-76467876907f.png">
 
+Below is the graph of the number of confirmed cases over time for each country:
+
 
 
