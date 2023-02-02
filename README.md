@@ -94,6 +94,19 @@ to note such countries like Denmark, Iceland have a smaller population size comp
 like US and Germany.
 
 The graph below shows the confirmed cases vs the average monthly weather for USA,
-Italy and UK.
+Italy and UK:
+
+
+<img width="635" alt="Screen Shot 2023-02-02 at 2 47 58 PM" src="https://user-images.githubusercontent.com/123434797/216434622-0d859488-8864-4cf1-9cdd-93a9d6d9ac1e.png">
+
+The graphs above show that when the average temperature (yellow line) for each country
+is increasing the number of COVID-19 cases reported slowly decreases, as we can see the line
+flattens. This is showing that there is a negative correlation between the number of COVID-19
+cases and the temperature, as we also see the number of cases spike after the temperature drops.
+Italy, US, and United Kingdom are countries that have all seasons such as Spring, Winter, 
+Ayalew 10
+
+Summer, and Fall. Using these countries that have weather changes throughout the year we can
+perhaps assume that the results show COVID-19 spreads more during colder temperatures.
 
 
