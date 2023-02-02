@@ -58,5 +58,7 @@ CSV file was then extracted onto python and was merged to relevant datasets usin
 The table below merges the dataset from John Hopkins University obtained from the
 course web into a single time series for each country. 
 
+<img width="357" alt="Screen Shot 2023-02-01 at 9 25 08 PM" src="https://user-images.githubusercontent.com/123434797/216218281-93971f3b-552b-47e8-95d1-76467876907f.png">
+
 
 
