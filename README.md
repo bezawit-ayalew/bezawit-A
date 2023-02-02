@@ -84,4 +84,16 @@ per 100 confirmed cases.
 The following table shows the ratio between the total number of confirmed cases and the
 population size of each country:
 
+<img width="171" alt="Screen Shot 2023-02-02 at 2 44 00 PM" src="https://user-images.githubusercontent.com/123434797/216434050-6e36d679-b03f-4d99-a3fd-40b9c3012499.png">
+
+From the table above we can observe that none of the countries that had the highest
+number of cases are listed to have the highest number of confirmed cases per population size.
+This means the countries that had the highest number of cases did not have a lot of their
+population impacted when comparing the cases to their population size. However it is important
+to note such countries like Denmark, Iceland have a smaller population size compare to countries
+like US and Germany.
+
+The graph below shows the confirmed cases vs the average monthly weather for USA,
+Italy and UK.
+
 
