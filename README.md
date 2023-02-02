@@ -75,4 +75,13 @@ affected countries:
 
 <img width="408" alt="Screen Shot 2023-02-01 at 10 10 19 PM" src="https://user-images.githubusercontent.com/123434797/216222193-4c57b9b1-ecd9-4193-a90b-ed8fc9b651d1.png">
 
+From the bar graph above we see that Yemen had the highest number of deaths per 100
+confirmed cases. Yemen is one of the poorest countries in the region spanning the Middle east to
+North Africa (Haleem 2022). From this bar chart we can also observe that countries like Haiti,
+Somalia, Niger, and Sudan are all lower income countries and have the highest number of deaths
+per 100 confirmed cases.
+
+The following table shows the ratio between the total number of confirmed cases and the
+population size of each country:
+
 
