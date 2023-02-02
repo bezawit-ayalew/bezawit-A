@@ -65,6 +65,13 @@ Below is the graph of the number of confirmed cases over time for each country:
 <img width="684" alt="Screen Shot 2023-02-01 at 9 45 55 PM" src="https://user-images.githubusercontent.com/123434797/216221850-3f7b66da-84d6-4e10-9d7b-7f6a9c0f9831.png">
 
 
+According to the graphs above most of the countries seem to be showing an exponential
+growth. For example countries like Syria, Cuba, Burundi, Georgia, Austria, Belgium, Botswana
+and Bolivia are leaving the exponential growth because we can see the line flatten towards April
+2022.Countries like UK, Cyprus, France, Finland Greece and Ireland however are still showing
+an exponential growth as there lines do not flatten, but still is at its peak in the month of April
+2022. The graph below shows the number of deaths per 100 confirmed cases, for the 20 most
+affected countries:
 
 
 
