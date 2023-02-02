@@ -73,5 +73,6 @@ an exponential growth as there lines do not flatten, but still is at its peak in
 2022. The graph below shows the number of deaths per 100 confirmed cases, for the 20 most
 affected countries:
 
+<img width="408" alt="Screen Shot 2023-02-01 at 10 10 19 PM" src="https://user-images.githubusercontent.com/123434797/216222193-4c57b9b1-ecd9-4193-a90b-ed8fc9b651d1.png">
 
 
