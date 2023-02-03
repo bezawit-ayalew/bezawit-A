@@ -2,7 +2,7 @@ bezawit-A
 ## Data Science Portfolio 
 
 
-## Project 1 - Impact of COVID-19 Data Analysis 
+## [Project 1 - Impact of COVID-19 Data Analysis] https://github.com/bezawit-ayalew/bezawit-A/blob/main/Project%201-%20Impact%20of%20COVID-19
 
 
 The purpose of this project is to investigate the impacts of COVID-19 in different parts of
