@@ -1,6 +1,6 @@
 # Welcome to my Data Sciecne Projects
 
-## 1. Amazon Products Sentiment Analysis Jan 2024 Northeastern University, Natural Language Processing
+* 1. Amazon Products Sentiment Analysis Jan 2024 Northeastern University, Natural Language Processing
 ● Goal: To enhance Amazon's e-commerce platform using sentiment analysis to gauge customer feedback
 ● Method: Utilized Python, Pandas, and TensorFlow to build Support Vector Machines (SVM), Logistic Regression,
 LSTM, and Convolutional Neural Network (CNN) models using Natural Language Processing (NLP) techniques to
