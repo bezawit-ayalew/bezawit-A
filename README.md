@@ -26,5 +26,3 @@ Please refer to the following links below for each project:
 - **Goal:** To identify the most influential features (e.g., household wealth index) that influenced undernutrition among under-five children in Ethiopia to help policymakers achieve targeted interventions.
 - **Method:** Built Random Forest, MLP, and Naive Bayes models to rank over 300,000+ features from the dataset.
 - **Outcome:** 'Time To Water' is the most significant factor influencing undernutrition.
-
-
