@@ -1,0 +1,131 @@
+---
+title: "Correlation"
+output:
+  html_document: default
+  pdf_document: default
+  word_document: default
+date: "2023-11-04"
+---
+
+```{r}
+
+library(tibble)
+library(dplyr)
+library(dtplyr)
+library(tidyr)
+library(ggplot2)
+library(ggmap)
+
+```
+
+## R Markdown
+
+### Background:
+
+In my exploration of the Craigslist data set for Boston's communities, I've chosen to focus on three fundamental variables: housing price, area square footage, and population size by census tract. The selection of these variables stems from a keen interest in unraveling the intricate dynamics of urban informatics within the realm of online housing listings.
+
+Housing prices, is a key determinant in real estate transactions, bear significance for both buyers and sellers navigating the market. By looking at the correlation between listing prices and other variables, I aim to uncover factors that influence housing costs within the Craigslist data set.The size of a property, represented by area square footage, holds substantial weight in real estate considerations. My analysis seeks to discern how area square footage correlates with housing prices, offering insights into how the market values spatial dimensions.Exploring the relationship between area square footage and population size by census tract contributes to my understanding of the spatial distribution of populations. 
+
+Together, these variables present a holistic view of the interplay between housing features, market dynamics, and demographic patterns within the Craigslist data set. My goal is to uncover potential trends, disparities, and factors influencing housing decisions in the digital realm, mirroring the complexity of urban living.
+
+
+### Analysis:
+
+The code below shows step by step how I conducted my analysis to find the corretlations between my selected varaibles:
+
+```{r cars}
+
+
+library(ggplot2)
+library(GGally)
+
+
+
+data <- read.csv('Craiglist.csv')
+census <- read.csv('census.csv')
+
+merged_data <- merge(data, census, by.x = 'CT_ID_10', by.y = 'GEOCODE')
+
+
+
+# PRICE AND AREA 
+final_set = data[c("PRICE", "AREA_SQFT", "LISTING_ID" )]
+final_set$PRICE <- as.numeric(final_set$PRICE)
+final_set$AREA_SQFT <- as.numeric(final_set$AREA_SQFT)
+final_set<- final_set[complete.cases(final_set), ]
+
+
+# I struggled to get the correct graph correlation so I used Chat GPT here to get the ggplot to appear following the code beloew:
+ggplot(final_set, aes(x = PRICE, y = AREA_SQFT)) +
+geom_point() +
+coord_cartesian(ylim = c(0, 1000)) + 
+labs(title = "Relationship between Price and Area")
+
+
+# Correlations 
+correlation_coefficient <- cor(final_set$PRICE, final_set$AREA_SQFT)
+significance <- cor.test(final_set$PRICE, final_set$AREA_SQFT)$p.value
+EffectSize <- abs(correlation_coefficient)
+# Displays the correlation coefficient
+print(paste("Correlation Coefficient for Area Sqft and Price: ", correlation_coefficient))
+print(paste("Significance(P-VALUE) for Area Sqft and Price: ", significance))
+print(paste("Effect Size for Area Sqft and Price", EffectSize))
+
+
+
+
+# POPULATION AND AREA 
+final_set2 = merged_data[c("P0020001", "AREA_SQFT", "LISTING_ID" )]
+final_set2$P0020001 <- as.numeric(final_set2$P0020001)
+final_set2$AREA_SQFT <- as.numeric(final_set2$AREA_SQFT)
+final_set2<- final_set2[complete.cases(final_set2), ]
+
+
+
+ggplot(final_set2, aes(x = P0020001, y = AREA_SQFT)) +
+geom_point() +
+coord_cartesian(ylim = c(0, 1000)) + 
+labs(title = "Relationship between Population and Area SQFT")
+
+
+# Correlations
+correlation_coefficient2 <- cor(final_set2$P0020001, final_set2$AREA_SQFT)
+significance2 <- cor.test(final_set2$P0020001, final_set2$AREA_SQFT)$p.value
+EffectSize2 <- abs(correlation_coefficient2)
+# Displays the correlation coefficient
+print(paste("Correlation Coefficient for Area sqft and Population: ", correlation_coefficient2))
+print(paste("Significance(P-VALUE) for Area sqft and Population: ", significance2))
+print(paste("Effect Size for Area sqft and Population: ", EffectSize2))
+
+
+gallytable <- merge(final_set2, final_set, by.x = 'LISTING_ID', by.y = 'LISTING_ID')
+
+
+head(gallytable)
+
+ggpairs(gallytable, columns = c("PRICE", "AREA_SQFT.y","P0020001"))
+
+```
+
+
+#### 1. Price and Area Sqft:
+   - **Correlation Coefficient:** 0.0026
+   - **Significance (P-Value):** 0.3492
+   - **Effect Size:** 0.0026
+
+   My investigation into the Craigslist data set reveals a minimal correlation between housing price and area square footage. This suggests that, within online listings, changes in area square footage are not substantially linked with alterations in housing prices. The findings challenge assumptions regarding the predominant role of size in determining housing costs.
+
+#### 2. Area Sqft and Population:
+   - **Correlation Coefficient:** -0.0109
+   - **Significance (P-Value):** 0.1246
+   - **Effect Size:** 0.0109
+
+   The observed weak correlation between area square footage and population size indicates that, within Craigslist listings, larger areas are only slightly associated with smaller populations. This nuanced relationship may underscore how spatial characteristics in online listings diverge from broader population distribution patterns.
+
+### Interpretation:
+
+The analysis of the Craigslist data set highlights nuanced connections between housing price, area square footage, and population size. The limited significance and effect size of these correlations suggest that determinants of housing decisions within online listings may be influenced by factors not explicitly captured in the data set. The approach used in this analysis extends beyond the specific variables examined here, offering a template for exploring diverse urban datasets. By adapting the methodology to different variables and contexts, researchers can uncover varied patterns and factors influencing housing markets and demographic dynamics in various urban settings. This transferability enables a robust exploration of urban informatics beyond the boundaries of the Craigslist dataset analysis.
+
+
+
+

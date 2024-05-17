@@ -1,0 +1,61 @@
+---
+title: "Comparing Groups"
+output: html_document
+date: "2023-11-16"
+---
+
+
+---
+title: "Correlation"
+output:
+  html_document: default
+  pdf_document: default
+  word_document: default
+date: "2023-11-04"
+---
+
+```{r}
+
+library(tibble)
+library(dplyr)
+library(dtplyr)
+library(tidyr)
+library(ggplot2)
+library(ggmap)
+
+```
+
+## R Markdown
+
+Outcome variable of interest: I am interested to look at Price as my outcome variable since understanding the factors that influence the final sale price of a listing in different groups can possibility help us identify pricing trends that might surprise us as well as, market demand, and the impact of various features on the value of listings.
+
+My categorical variables is going to be untruthfulness which is my latent construct. To see how price is affected in those two groups of listings that are flagged as truthful and untruthful.
+
+
+
+
+
+```{r cars}
+
+
+library(ggplot2)
+library(GGally)
+
+
+
+data <- read.csv('Craiglist.csv')
+census <- read.csv('census.csv')
+
+data$Untruthful <- ifelse(
+  is.na(data$PRICE) | is.na(data$AREA_SQFT) | data$PRICE < 200 | data$PRICE > 100000 | data$AREA_SQFT < 30, 
+  "Yes", 
+  "No"
+)
+
+
+```
+
+
+
+
+

@@ -1,0 +1,120 @@
+---
+title: "Latent Construct"
+output:
+  pdf_document: default
+  html_document: default
+  word_document: default
+date: "2023-11-04"
+---
+
+```{r}
+
+library(tibble)
+library(dplyr)
+library(dtplyr)
+library(tidyr)
+library(ggplot2)
+library(ggmap)
+
+```
+
+## R Markdown
+
+
+
+```{r cars}
+
+# Load the ggplot2 library
+library(ggplot2)
+# Load your data from Craiglist.csv
+data <- read.csv('Craiglist.csv')
+# Set the price and area thresholds
+threshold_price <- 200
+area_threshold <- 100
+
+# Use the aggregate function to find the minimum LISTING_ID for prices below the threshold
+PriceTruthfulness <- aggregate(LISTING_ID ~ PRICE, data[data$PRICE < threshold_price, ], min)
+# Use the aggregate function to find the minimum LISTING_ID for area square footage below the threshoAreaTruthfulness <- aggregate(LISTING_ID ~ AREA_SQFT, data[data$AREA_SQFT < area_threshold, ], min)
+# Merge the two data frames based on LISTING_ID
+merged_data <- merge(PriceTruthfulness, data, by.x = "LISTING_ID", by.y = "LISTING_ID")
+# Remove rows with missing values
+merged_data1 <- na.omit(merged_data)
+# Create a scatter plot
+ggplot(merged_data1, aes(x = PRICE.x, y = AREA_SQFT)) +
+geom_point() +
+coord_cartesian(ylim = c(0, 1000)) + # Set the y-axis limits
+labs(title = "Relationship between Price and Area")
+
+```
+Creating a chloropleth map of untruthfulness levels is a valuable tool for gaining insights into the community landscape. In the context of my analysis, which categorizes untruthfulness into "Low," "Medium," and "High" categories, the chloropleth map serves several purposes:
+
+1. Spatial Pattern Identification:
+   - The map allows for the visual identification of spatial patterns of untruthfulness levels across a given area, such as a city or region.
+
+2. Hotspots and Coldspots:
+   - It highlights areas with high untruthfulness ("Hotspots") and areas with low untruthfulness ("Coldspots"). Understanding the location of these hotspots and coldspots can offer clues about the underlying causes and factors contributing to untruthfulness.
+
+3. Community Disparities:
+   - By categorizing untruthfulness levels, the map can reveal disparities in untruthfulness among different communities or neighborhoods. High untruthfulness areas may be concentrated in specific neighborhoods, indicating potential challenges or issues unique to those areas.
+
+4. Community Exploration:
+   - The map can serve as a starting point for further exploration of communities. Researchers and policymakers can use the map to target specific areas for more in-depth analysis or intervention strategies.
+
+5. Policy and Resource Allocation:
+   - It can inform decision-making by policymakers and community leaders. Identifying areas with high untruthfulness can help allocate resources and interventions more effectively.
+
+6. Data-Driven Insights:
+   - The map provides data-driven insights into the distribution of untruthfulness levels, moving beyond abstract statistics to offer a visual representation of the problem.
+
+7. Community Engagement:
+   - Sharing the map with community members can promote awareness and encourage community engagement. It can be a useful tool for initiating discussions and actions aimed at addressing untruthfulness.
+
+In summary, the chloropleth map of untruthfulness levels enhances our understanding of community landscapes by revealing spatial patterns, disparities, and concentrations of untruthfulness. It not only provides a visual representation of the data but also serves as a practical tool for decision-making and community engagement. The map offers a holistic view of the distribution of untruthfulness and can inspire further exploration and analysis of the communities under study.
+
+```{r}
+require(sf)
+library(leaflet)
+
+
+data$Untruthful <- ifelse(
+  is.na(data$PRICE) | is.na(data$AREA_SQFT) | data$PRICE < 200 | data$PRICE > 100000 | data$AREA_SQFT < 30, 
+  "Yes", 
+  "No"
+)
+
+city_counts <- aggregate(data$Untruthful, by = list(LOCATION = data$LOCATION, CT_ID_10 = data$CT_ID_10), FUN = function(x) sum(x == "Yes"))
+
+# Assuming you have the 'city_counts' data frame
+# Define thresholds for "Low," "Medium," and "High" counts
+# Define thresholds for "Low," "Medium," and "High" counts
+low_threshold <- 1
+high_threshold <- 10
+
+# Create a new column 'Category' based on the count thresholds
+city_counts$Category <- ifelse(
+  city_counts$x < low_threshold, "Low",
+  ifelse(city_counts$x > high_threshold, "High", "Medium")
+)
+
+
+#city_counts <- aggregate(data$CENSUS_TRACT ~ data$LOCATION + data$Untruthful, data, FUN = function(x) unique(x))
+
+# Calculate the count of "Untruthful" records for each city (LOCATION)
+#city_counts <- aggregate(Untruthful ~ LOCATION, data, FUN = function(x) sum(x == "Yes"))
+filtered_city_counts <- city_counts %>%
+  filter(Category == "High")
+
+tracts_geo<- st_read("/Users/bezawitayalew/Downloads/Tracts_Boston_2010_BARI/Tracts_Boston BARI.shp")
+tracts_geo<-merge(tracts_geo,filtered_city_counts,by='CT_ID_10',all.x=TRUE)
+
+
+mymap <- leaflet() %>%
+  addProviderTiles("CartoDB.Positron") %>%
+  setView(-71.089792, 42.311866, zoom = 12) %>%
+  addPolygons(data = tracts_geo)
+mymap
+
+
+
+```
+
