@@ -2,6 +2,7 @@
 
 ### 1. Amazon Products Sentiment Analysis 
 ● Goal: To enhance Amazon's e-commerce platform using sentiment analysis to gauge customer feedback
+
 ● Method: Utilized Python, Pandas, and TensorFlow to build Support Vector Machines (SVM), Logistic Regression,
 LSTM, and Convolutional Neural Network (CNN) models using Natural Language Processing (NLP) techniques to
 analyze sentiments of customers
