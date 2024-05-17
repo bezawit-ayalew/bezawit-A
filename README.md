@@ -6,15 +6,22 @@
 ● Method: Utilized Python, Pandas, and TensorFlow to build Support Vector Machines (SVM), Logistic Regression,
 LSTM, and Convolutional Neural Network (CNN) models using Natural Language Processing (NLP) techniques to
 analyze sentiments of customers
+
 ● Outcome: An LSTM model achieved 90% accuracy in sentiment analysis, aiding Amazon in identifying customer
 sentiments accurately
+
 ### 2. Optimizing Sports Performance: Jockey Data Feature Engineering
 ● Goal: To identify and analyze the most influential features (track information and jockey data) that determine the likelihood of a jockey winning a race and improving jockey winning odds
+
 ● Method: Built K-means, isolation forest, linear regression models, and PCA to analyze features, and evaluated clusters’ accuracy using ARI, Silhouette, and Inertia scores
+
 ● Outcome: Identified the most influential variable(weight of a jockey) affecting the odds of winning
+
 ### 3. Analyzing Social Media Sentiments Post Roe v. Wade 
 ● Goal: To explore the spectrum of opinions expressed on Twitter following significant legal events related to reproductive rights, such as the overturn of Roe v. Wade
+
 ● Method: Utilized a combination of Latent Dirichlet Allocation (LDA), Bidirectional Encoder Representations from Transformers (BERT), and deep learning models for sentiment analysis
+
 ● Outcome: A real-time user interface capable of accurately analyzing the sentiment of text at 90% accuracy, providing insights into the diverse range of opinions expressed in Twitter discourse.
 ### 4. Housing Market Data Analysis using R Programming 
 ● Goal: Develop a measure of "untruthfulness" in a Craigslist housing dataset to detect potentially fraudulent listings, focusing on low prices or square footage, aiming to enhance community awareness and inform scam prevention policies
