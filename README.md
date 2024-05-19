@@ -30,5 +30,5 @@ Please refer to the following links below for each project:
 ## 6. [Investigating Neonatal Mortality](https://github.com/bezawit-ayalew/bezawit-A/tree/main/Exploring%20Neontal%20Mortality%20in%20US%20Population) 
 - **Goal:** Investigated the impact of maternal race on neonatal mortality in the US in 2020
 - **Method:** Used R programming for statistical and Bayesian inference, including logistic regression, stepwise model selection, and ANOVA tests
-- **Outcome:** Found significant racial disparities in neonatal mortality, highlighting the need for targeted healthcare interventions - View Project on Github
+- **Outcome:** Found significant racial disparities in neonatal mortality, highlighting the need for targeted healthcare interventions 
 
