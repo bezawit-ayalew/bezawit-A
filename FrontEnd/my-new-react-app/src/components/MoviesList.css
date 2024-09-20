@@ -1,0 +1,39 @@
+.movieRow {
+    margin-top: 15px;
+  }
+  
+  .card {
+    margin-top: 15px;
+  }
+  
+  .moviesListCard {
+    width: 18rem;
+    position: relative; /* Add this line */
+  }
+  
+  div.poster {
+    margin: 10px;
+    position: relative; /* Add this line */
+  }
+  
+  .smallPoster {
+    user-select: none;
+  }
+  
+  .star {
+    width: 1.5em; /* Adjust size for better fit */
+    height: 1.5em; /* Adjust size for better fit */
+    filter: drop-shadow(2px 4px 6px black);
+    position: absolute; /* Add this line */
+    top: 10px; /* Adjust position as needed */
+    right: 10px; /* Adjust position as needed */
+  }
+  
+  .starFill {
+    fill: yellow;
+  }
+  
+  .starEmpty {
+    fill: white;
+  }
+  
