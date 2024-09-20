@@ -3,15 +3,9 @@
 ## Frontend Repository
 
 ### Screenshot of the Top Page with Favorites Stars Displayed
-![image](https://github.com/user-attachments/assets/e4cfa8e1-5492-454d-ae5d-e3c85f49c60b)
-
+![image](https://github.com/user-attachments/assets/bc461e8d-e465-4977-8772-2706e39b1a73)
 
 ### Screenshot of the Favorites List Database Table Displayed in MongoDB Compass
- 
- TO BE PASTED
-
- 
- 
  
 # Movie Review App - Part 4: Authentication
 
@@ -24,8 +18,9 @@ In this part of the project, I set up authentication to enable users to log in a
 
 1. A screenshot of a movie reviews page with a newly written review:
 
+![image](https://github.com/user-attachments/assets/5c7007bd-b536-4f92-874e-46430d03b52c)
    
-<img width="1410" alt="Screenshot 2024-07-08 at 5 45 49 PM" src="https://media.github.khoury.northeastern.edu/user/17515/files/a91de406-3e39-445e-82d0-9d97fdf4ad1f">
+
 
 
 2. A screenshot of the same page with the review edited:
@@ -43,23 +38,29 @@ This repository contains the frontend for a Movie App. The app allows users to b
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-<img width="1431" alt="Screenshot 2024-06-29 at 12 51 04 AM" src="https://media.github.khoury.northeastern.edu/user/17515/files/48144aa4-9bc3-446a-bf16-37991cf852f9">
+![image](https://github.com/user-attachments/assets/8829c8ec-9317-4dcb-8f50-d72b51b15ec4)
+
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### 2. Single movie page with its own poster
-<img width="1374" alt="Screenshot 2024-06-29 at 12 51 29 AM" src="https://media.github.khoury.northeastern.edu/user/17515/files/6aeb5c2f-5cee-4f29-929b-e0aa854707af">
+
+![image](https://github.com/user-attachments/assets/9ec8f248-eba5-4e28-b3ef-75310826ee78)
+
 
 
 ### 3. Single movie page with the placeholder poster
-<img width="1335" alt="Screenshot 2024-06-29 at 1 27 11 AM" src="https://media.github.khoury.northeastern.edu/user/17515/files/f93172c9-0e38-41ca-b7f8-5d4986ec5b0c">
+
+![image](https://github.com/user-attachments/assets/ce2ce8bb-6497-4fb5-9e4f-9ddfb0803122)
+
 
 
 ### 4. Command line showing passed tests
-<img width="380" alt="Screenshot 2024-06-29 at 1 28 39 AM" src="https://media.github.khoury.northeastern.edu/user/17515/files/fa88b8d2-6bf4-4be0-8f3d-665b4efb0000">
+![image](https://github.com/user-attachments/assets/ed3a0fb0-fd3f-47aa-8d7b-925ee1456b90)
 
-<img width="375" alt="Screenshot 2024-06-29 at 1 28 34 AM" src="https://media.github.khoury.northeastern.edu/user/17515/files/74bf3159-7084-4343-90c3-b5ba781283ff">
+![image](https://github.com/user-attachments/assets/9dda6e7f-de14-4d0a-99fa-5ce0e6926e09)
 
-<img width="375" alt="Screenshot 2024-06-29 at 1 28 44 AM" src="https://media.github.khoury.northeastern.edu/user/17515/files/4d8d2547-503f-4c10-915e-262ae479221f">
+![image](https://github.com/user-attachments/assets/e173bcd8-0030-42f2-9fd8-517b6578fc99)
+
 
 ### Code Splitting
 
