@@ -3,9 +3,7 @@
 ## Frontend Repository
 
 ### Screenshot of the Top Page with Favorites Stars Displayed
-
-<img width="981" alt="Screenshot 2024-07-09 at 12 32 55 AM" src="https://media.github.khoury.northeastern.edu/user/17515/files/d457eb9f-f47c-4345-abcb-63a86cc1d515">
-
+![image](https://github.com/user-attachments/assets/e4cfa8e1-5492-454d-ae5d-e3c85f49c60b)
 
 
 ### Screenshot of the Favorites List Database Table Displayed in MongoDB Compass
