@@ -10,72 +10,27 @@ For this assignment, I implemented the backend of a full-stack MERN application.
 
 1. **Compass Interface with a Review Added**
 
-<img width="531" alt="Screenshot 2024-06-18 at 4 22 36 PM" src="https://media.github.khoury.northeastern.edu/user/17515/files/30dec456-6341-45db-90a5-4e359479a479">
+![image](https://github.com/user-attachments/assets/d699e599-d093-468c-9784-11818c53ded2)
+
 
     
 
 2. **Insomnia Interface with Successful PUT Request**
-<img width="938" alt="Screenshot 2024-06-18 at 6 16 05 PM" src="https://media.github.khoury.northeastern.edu/user/17515/files/54fec5ad-ab35-44bb-9852-1287d5f193c9">
+
+![image](https://github.com/user-attachments/assets/367fde01-500c-4a93-8d73-58c6f047cdf7)
+
 
  
 
 3. **Insomnia Interface with Successful DELETE Request**
-<img width="956" alt="Screenshot 2024-06-18 at 6 15 55 PM" src="https://media.github.khoury.northeastern.edu/user/17515/files/e7968cb2-6c78-4948-8f2c-d9f22e3f5e6d">
+![image](https://github.com/user-attachments/assets/823a6493-865e-41a8-a1ac-fa842911d7c4)
 
- 
+
+
 4. **Successful Test Run**
 
   
-<img width="399" alt="Screenshot 2024-06-18 at 6 13 23 PM" src="https://media.github.khoury.northeastern.edu/user/17515/files/4b5de577-e1c9-4b85-bb1d-8658510982bb">
-
-
-
-
-# Full-Stack MERN Application - Backend Implementation
-
-## Description
-
-For this assignment, I implemented the backend of a full-stack MERN application. This involved setting up routing to handle incoming requests, creating controllers for high-level data access, and implementing data access objects (DAOs) for querying the database directly.
-
-### Screenshots
-
-1. **Compass Interface with a Review Added**
-
-<img width="531" alt="Screenshot 2024-06-18 at 4 22 36 PM" src="https://media.github.khoury.northeastern.edu/user/17515/files/30dec456-6341-45db-90a5-4e359479a479">
-
-    
-
-2. **Insomnia Interface with Successful PUT Request**
-<img width="938" alt="Screenshot 2024-06-18 at 6 16 05 PM" src="https://media.github.khoury.northeastern.edu/user/17515/files/54fec5ad-ab35-44bb-9852-1287d5f193c9">
-
- 
-
-3. **Insomnia Interface with Successful DELETE Request**
-<img width="956" alt="Screenshot 2024-06-18 at 6 15 55 PM" src="https://media.github.khoury.northeastern.edu/user/17515/files/e7968cb2-6c78-4948-8f2c-d9f22e3f5e6d">
-
- 
-4. **Successful Test Run**
-
-  
-<img width="399" alt="Screenshot 2024-06-18 at 6 13 23 PM" src="https://media.github.khoury.northeastern.edu/user/17515/files/4b5de577-e1c9-4b85-bb1d-8658510982bb">
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/d2f85ca8-1b2f-46c8-bac6-da1d52f9a25f)
 
 
 
@@ -105,7 +60,8 @@ This is the first assignment in the MERN stack application project. In this assi
    - Made the initial commit to the Git repository.
 
 Screenshot:
-<img width="251" alt="Screenshot 2024-06-07 at 8 47 04 PM" src="https://media.github.khoury.northeastern.edu/user/17515/files/77a0b92f-ec29-423c-81e3-990b7daec9b4">
+![image](https://github.com/user-attachments/assets/3e69abc9-0ca0-4ed0-bdd8-dbaffabf71bc)
+
 
 
 
@@ -116,7 +72,8 @@ Screenshot:
    - Created an empty `reviews` collection in the `movie_time_db` database using MongoDB Compass.
 
 
-Screenshot:<img width="787" alt="Screenshot 2024-06-09 at 10 06 08 PM" src="https://media.github.khoury.northeastern.edu/user/17515/files/80fe7606-6e7d-4d50-ba01-0e075a9921a1">
+![image](https://github.com/user-attachments/assets/8558ae54-7633-4d68-81c8-e5e345c96d8a)
+
 
 
 
